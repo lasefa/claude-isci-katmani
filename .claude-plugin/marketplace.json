@@ -1,0 +1,11 @@
+{
+  "name": "claude-isci-katmani",
+  "owner": { "name": "Ömer" },
+  "plugins": [
+    {
+      "name": "claude-isci-katmani",
+      "source": "./",
+      "description": "Hamallik isini ucretsiz OpenCode isci modeline devreder (Windows)."
+    }
+  ]
+}

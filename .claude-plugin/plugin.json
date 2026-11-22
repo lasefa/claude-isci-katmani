@@ -1,0 +1,7 @@
+{
+  "name": "claude-isci-katmani",
+  "description": "Hamallik isini ucretsiz OpenCode isci modeline devreden Claude Code becerisi (Windows).",
+  "version": "0.1.0",
+  "license": "MIT",
+  "keywords": ["opencode", "worker", "free-model", "cost", "windows"]
+}
