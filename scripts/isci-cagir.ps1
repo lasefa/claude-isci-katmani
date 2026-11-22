@@ -37,6 +37,8 @@ foreach ($m in @($Model) + $Yedek) {
   if ($metin.Length -gt 0) { $Model = $m; break }
   "bos cevap: $m" | Add-Content $gunluk
 }
+# Salt okunur (plan) kipinden sizan bilgi satirlarini ayikla
+$metin = (($metin -split "`r?`n" | Where-Object { $_ -notmatch '(?i)plan mod|plan mode|read-only mode|salt okunur mod' }) -join "`r`n").Trim()
 $sure = [int]((Get-Date) - $bas).TotalSeconds
 Set-Content -LiteralPath $cikti -Value $metin -Encoding UTF8
 "BITTI | model: $Model | sure: $sure sn | cevap: $cikti"

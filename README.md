@@ -69,3 +69,14 @@ Install in Claude Code:
 ```
 
 Requires OpenCode (`npm.cmd install -g opencode-ai`). Run `scripts\kontrol.ps1` to verify. MIT licensed.
+
+## Sorun giderme
+
+- **`/plugin` komutları çalışmazsa**, terminalden aynı işi yapın:
+  ```
+  claude plugin marketplace add lasefa/claude-isci-katmani
+  claude plugin install claude-isci-katmani@claude-isci-katmani
+  ```
+- **Betik çalışmıyor / "çalıştırma politikası" hatası:** Betikler `-ExecutionPolicy Bypass` ile çağrılır, bu yüzden normalde ayar gerekmez. Yine de engellenirse PowerShell'de bir kez `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` çalıştırın.
+- **Cevap boş geliyor:** `.yazisma\isci-<etiket>-log.txt` dosyasına bakın. Ücretsiz modeller zaman zaman yanıt vermez; betik yedek modellere otomatik geçer.
+- **İşçi çıktısını her zaman kontrol edin.** Ücretsiz modeller küçük hatalar yapabilir (ör. bir dosyanın boyutunu yanlış yazmak). Sayısal sonuçları ayrıca hesaplayıp karşılaştırın.
