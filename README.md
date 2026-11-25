@@ -38,7 +38,7 @@ Claude'a "bunu işçiye ver" ya da "ucuz modele yaptırt" demeniz yeterlidir. Cl
 2. `scripts\isci-cagir.ps1 -Not gorev.md -Etiket kisa-ad` komutunu çalıştırır.
 3. Cevabı `.yazisma\isci-kisa-ad-cevap.md` dosyasından okuyup doğrular.
 
-Varsayılan model `opencode/deepseek-v4.1-flash-free`'dir. Yedek modeller `mimo-v2.6-flash-free` ve `big-pickle`'dır. Model listesi için `opencode models` komutunu kullanın; ücretsiz modeller zamanla değişebilir.
+Varsayılan model `opencode/deepseek-v4.1-flash-free`'dir. Yedek modeller `hy4-flash-free`, `beam-free` ve `mimo-v2.6-flash-free`'dır. Model listesi için `opencode models` komutunu kullanın; ücretsiz modeller zamanla değişebilir.
 
 Dosya yazma izni verilecekse `-Yazabilir` parametresini ekleyin. Varsayılan olarak model salt okunur çalışır.
 

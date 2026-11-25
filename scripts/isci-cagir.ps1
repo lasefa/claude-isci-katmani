@@ -5,7 +5,7 @@ param(
   [Parameter(Mandatory)] [string]$Not,      # .yazisma altindaki gorev notu dosya adi
   [Parameter(Mandatory)] [string]$Etiket,   # cikti: .yazisma\isci-<Etiket>-cevap.md
   [string]$Model = 'opencode/deepseek-v4.1-flash-free',
-  [string[]]$Yedek = @('opencode/mimo-v2.6-flash-free', 'opencode/big-pickle'),
+  [string[]]$Yedek = @('opencode/hy4-flash-free', 'opencode/beam-free', 'opencode/mimo-v2.6-flash-free'),
   [switch]$Yazabilir,                       # verilmezse salt okunur (plan ajani)
   [string]$Dizin = $PWD.Path                # varsayilan: betigi cagirdiginiz klasor (proje)
 )
